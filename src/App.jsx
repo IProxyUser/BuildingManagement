@@ -9,6 +9,8 @@ import Kleinreparaturen from './pages/Kleinreparaturen';
 import Gruenanlagenpflege from './pages/Gruenanlagenpflege';
 import Winterdienst from './pages/Winterdienst';
 import Kontakt from './pages/Kontakt';
+import Impressum from './pages/Impressum';
+import Datenschutz from './pages/Datenschutz';
 import './index.css';
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
             <Route path="/gruenanlagenpflege" element={<Gruenanlagenpflege />} />
             <Route path="/winterdienst" element={<Winterdienst />} />
             <Route path="/kontakt" element={<Kontakt />} />
+            <Route path="/impressum" element={<Impressum />} />
+            <Route path="/datenschutz" element={<Datenschutz />} />
           </Routes>
         </main>
         <Footer />

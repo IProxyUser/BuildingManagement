@@ -3,7 +3,7 @@ import ContactForm from '../components/ContactForm';
 const Objektbetreuung = () => {
     return (
         <div className="page-container animate-fade-in">
-            <div className="page-hero" style={{ backgroundImage: 'url(/objekt-bg.jpeg)' }}>
+            <div className="page-hero" style={{ backgroundImage: 'url(/objekt-bg.png)' }}>
                 <div className="page-hero-content">
                     <h1>Objektbetreuung</h1>
                     <p>Werterhalt und Sicherheit für Ihre Immobilien</p>
@@ -12,7 +12,7 @@ const Objektbetreuung = () => {
             <div className="content-wrapper">
                 <div className="service-detail-section">
                     <div className="service-image-container">
-                        <img src="/objekt-bg.jpeg" alt="Objektbetreuung" />
+                        <img src="/objekt-bg.png" alt="Objektbetreuung" />
                     </div>
                     <div className="service-text-container">
                         <h2>Werterhalt durch professionelle Betreuung</h2>

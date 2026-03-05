@@ -3,7 +3,7 @@ import ContactForm from '../components/ContactForm';
 const Gebaeudereinigung = () => {
     return (
         <div className="page-container animate-fade-in">
-            <div className="page-hero" style={{ backgroundImage: 'url(/reinigung-bg.jpeg)' }}>
+            <div className="page-hero" style={{ backgroundImage: 'url(/reinigung-bg.png)' }}>
                 <div className="page-hero-content">
                     <h1>Gebäudereinigung</h1>
                     <p>Strahlende Sauberkeit für ein perfektes Erscheinungsbild</p>
@@ -12,7 +12,7 @@ const Gebaeudereinigung = () => {
             <div className="content-wrapper">
                 <div className="service-detail-section">
                     <div className="service-image-container">
-                        <img src="/reinigung-bg.jpeg" alt="Gebäudereinigung" />
+                        <img src="/reinigung-bg.png" alt="Gebäudereinigung" />
                     </div>
                     <div className="service-text-container">
                         <h2>Makellose Sauberkeit innen und außen</h2>

@@ -12,7 +12,7 @@ const Hausmeisterservice = () => {
             <div className="content-wrapper">
                 <div className="service-detail-section">
                     <div className="service-image-container">
-                        <img src="/objekt-bg.jpeg" alt="Hausmeisterservice" />
+                        <img src="/hausmeister-bg.jpeg" alt="Hausmeisterservice" />
                     </div>
                     <div className="service-text-container">
                         <h2>Umfassender Service für Ihr Gebäude</h2>

@@ -1,6 +1,19 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import ContactForm from '../components/ContactForm';
 
 const Kontakt = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash === '#phone-section') {
+            const element = document.getElementById('phone-section');
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+    }, [location]);
+
     return (
         <div className="page-container animate-fade-in">
             <div className="page-hero" style={{ backgroundImage: 'url(/kontakt-bg.jpeg)' }}>
@@ -24,12 +37,13 @@ const Kontakt = () => {
                         </p>
                         <div style={{ marginBottom: '1rem' }}>
                             <strong>Adresse:</strong><br />
-                            Musterstraße 123<br />
-                            12345 Musterstadt
+                            Max-Müllner-Str. 17<br />
+                            80933 München<br />
+                            Deutschland
                         </div>
-                        <div style={{ marginBottom: '1rem' }}>
+                        <div style={{ marginBottom: '1rem' }} id="phone-section">
                             <strong>Telefon:</strong><br />
-                            +49 123 456789
+                            +49 178 3299943
                         </div>
                         <div>
                             <strong>E-Mail:</strong><br />

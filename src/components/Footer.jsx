@@ -7,9 +7,9 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-section">
-                    <h2 className="footer-logo">ISAR Service</h2>
+                    <h2 className="footer-logo">ISAR Gebäudeservice</h2>
                     <p className="footer-description">
-                        Ihr zuverlässiger Partner für Gebäudemanagement. Wir bieten professionelle Dienstleistungen für die Werterhaltung und Pflege Ihrer Immobilien – vom Hausmeisterservice bis zur Grünanlagenpflege.
+                        Ihr zuverlässiger Hausmeisterservice in München und Umgebung für professionelle Objektbetreuung, Gebäudereinigung und Grünanlagenpflege
                     </p>
                 </div>
 
@@ -30,11 +30,11 @@ const Footer = () => {
                     <div className="footer-contact-info">
                         <div className="contact-item">
                             <MapPin size={20} className="contact-icon" />
-                            <span>Musterstraße 123, 12345 Musterstadt</span>
+                            <span>Max-Müllner-Str. 17, 80933 München</span>
                         </div>
                         <div className="contact-item">
                             <Phone size={20} className="contact-icon" />
-                            <span>+49 123 456789</span>
+                            <span>+49 178 3299943</span>
                         </div>
                         <div className="contact-item">
                             <Mail size={20} className="contact-icon" />
@@ -47,8 +47,8 @@ const Footer = () => {
             <div className="footer-bottom">
                 <p>&copy; {new Date().getFullYear()} ISAR Gebäudeservice. Alle Rechte vorbehalten.</p>
                 <div className="footer-bottom-links">
-                    <Link to="#">Impressum</Link>
-                    <Link to="#">Datenschutzerklärung</Link>
+                    <Link to="/impressum">Impressum</Link>
+                    <Link to="/datenschutz">Datenschutzerklärung</Link>
                 </div>
             </div>
         </footer>

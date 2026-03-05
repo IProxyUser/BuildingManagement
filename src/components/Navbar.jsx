@@ -30,7 +30,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <img src="/logo.png" alt="ISAR Service Logo" className="navbar-logo-image" />
+          <img src="/logo.png" alt="ISAR Gebäudeservice Logo" className="navbar-logo-image" />
         </Link>
         <div className="menu-icon" onClick={toggleMenu}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}

@@ -64,3 +64,31 @@
         font-size: 1.1rem;
     }
 }
+
+.hero-cta-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.hero-cta-container .btn-primary,
+.hero-cta-container .btn-outline {
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+    min-width: 220px;
+}
+
+@media (max-width: 600px) {
+    .hero-cta-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hero-cta-container .btn-primary,
+    .hero-cta-container .btn-outline {
+        width: 100%;
+        min-width: unset;
+    }
+}
