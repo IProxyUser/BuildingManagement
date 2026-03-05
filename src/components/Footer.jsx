@@ -38,7 +38,7 @@ const Footer = () => {
                         </div>
                         <div className="contact-item">
                             <Mail size={20} className="contact-icon" />
-                            <span>info@isarservice.de</span>
+                            <span>info@isar-gebaeudeservice.de</span>
                         </div>
                     </div>
                 </div>

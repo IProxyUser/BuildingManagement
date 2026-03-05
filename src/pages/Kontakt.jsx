@@ -47,7 +47,7 @@ const Kontakt = () => {
                         </div>
                         <div>
                             <strong>E-Mail:</strong><br />
-                            info@isarservice.de
+                            info@isar-gebaeudeservice.de
                         </div>
                     </div>
                     <div>
