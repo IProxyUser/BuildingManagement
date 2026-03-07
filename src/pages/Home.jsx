@@ -17,16 +17,16 @@ const Home = () => {
 
     const services = [
         { title: 'Hausmeisterservice', path: '/hausmeisterservice', image: '/hausmeister-bg.jpeg' },
-        { title: 'Objektbetreuung', path: '/objektbetreuung', image: '/objekt-bg.png' },
+        { title: 'Objektbetreuung', path: '/objektbetreuung', image: '/objekt-bg.jpeg' },
         { title: 'Gebäudereinigung', path: '/gebaeudereinigung', image: '/reinigung-bg.png' },
         { title: 'Kleinreparaturen', path: '/kleinreparaturen', image: '/reparatur-bg.jpeg' },
         { title: 'Grünanlagenpflege', path: '/gruenanlagenpflege', image: '/gruenanlagen-bg.jpeg' },
-        { title: 'Winterdienst', path: '/winterdienst', image: '/winterdienst-bg.png' }
+        { title: 'Winterdienst', path: '/winterdienst', image: '/winterdienst-bg.jpeg' }
     ];
 
     return (
         <div className="page-container animate-fade-in">
-            <div className="page-hero home-hero" style={{ backgroundImage: 'url(/home-bg.png)' }}>
+            <div className="page-hero home-hero" style={{ backgroundImage: 'url(/home-bg.jpeg)' }}>
                 <div className="page-hero-content">
                     <h1>Willkommen bei ISAR Gebäudeservice</h1>
                     <p>Ihr zuverlässiger Hausmeisterservice in München und Umgebung für professionelle Objektbetreuung, Gebäudereinigung und Grünanlagenpflege</p>

@@ -11,11 +11,13 @@ import Winterdienst from './pages/Winterdienst';
 import Kontakt from './pages/Kontakt';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
+import ScrollToTop from './components/ScrollToTop';
 import './index.css';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="app-container">
         <Navbar />
         <main>
