@@ -18,7 +18,7 @@ const Home = () => {
     const services = [
         { title: 'Hausmeisterservice', path: '/hausmeisterservice', image: '/hausmeister-bg.jpeg' },
         { title: 'Objektbetreuung', path: '/objektbetreuung', image: '/objekt-bg.jpeg' },
-        { title: 'Gebäudereinigung', path: '/gebaeudereinigung', image: '/reinigung-bg.png' },
+        { title: 'Gebäudereinigung', path: '/gebaeudereinigung', image: '/reinigung-bg.jpeg' },
         { title: 'Kleinreparaturen', path: '/kleinreparaturen', image: '/reparatur-bg.jpeg' },
         { title: 'Grünanlagenpflege', path: '/gruenanlagenpflege', image: '/gruenanlagen-bg.jpeg' },
         { title: 'Winterdienst', path: '/winterdienst', image: '/winterdienst-bg.jpeg' }
