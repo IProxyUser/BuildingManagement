@@ -10,6 +10,24 @@
 
 <body>
   <div id="root"></div>
+
+  <!-- Hidden form for Netlify Bot detection -->
+  <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <select name="service">
+      <option value="Hausmeisterservice">Hausmeisterservice</option>
+      <option value="Objektbetreuung">Objektbetreuung</option>
+      <option value="Gebäudereinigung">Gebäudereinigung</option>
+      <option value="Kleinreparaturen">Kleinreparaturen</option>
+      <option value="Grünanlagenpflege">Grünanlagenpflege</option>
+      <option value="Winterdienst">Winterdienst</option>
+      <option value="Sonstiges">Sonstiges</option>
+    </select>
+    <textarea name="message"></textarea>
+  </form>
+
   <script type="module" src="/src/main.jsx"></script>
 </body>
 

@@ -17,23 +17,35 @@ const ContactForm = () => {
         setFormData(prevState => ({ ...prevState, [name]: value }));
     };
 
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Simulate form submission
-        console.log('Form submitted:', formData);
-        setIsSubmitted(true);
 
-        // Reset form after 3 seconds
-        setTimeout(() => {
-            setIsSubmitted(false);
-            setFormData({
-                name: '',
-                email: '',
-                phone: '',
-                service: '',
-                message: ''
-            });
-        }, 3000);
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...formData })
+        })
+            .then(() => {
+                setIsSubmitted(true);
+                // Reset form after 5 seconds
+                setTimeout(() => {
+                    setIsSubmitted(false);
+                    setFormData({
+                        name: '',
+                        email: '',
+                        phone: '',
+                        service: '',
+                        message: ''
+                    });
+                }, 5000);
+            })
+            .catch(error => console.error("Netlify Form Submission Error:", error));
     };
 
     return (
@@ -50,7 +62,18 @@ const ContactForm = () => {
                     <p>Wir werden uns in Kürze bei Ihnen melden.</p>
                 </div>
             ) : (
-                <form className="contact-form" onSubmit={handleSubmit}>
+                <form
+                    className="contact-form"
+                    onSubmit={handleSubmit}
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                >
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p style={{ display: 'none' }}>
+                        <label>Don't fill this out if you're human: <input name="bot-field" onChange={handleChange} /></label>
+                    </p>
                     <div className="form-group-row">
                         <div className="form-group">
                             <label htmlFor="name">Name *</label>
