@@ -43,7 +43,7 @@ const Kontakt = () => {
                         </div>
                         <div style={{ marginBottom: '1rem' }} id="phone-section">
                             <strong>Telefon:</strong><br />
-                            +49 178 3299943
+                            +49 163 3670880
                         </div>
                         <div>
                             <strong>E-Mail:</strong><br />
